@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -15,16 +15,16 @@
             <header>
                 <nav>
                     <div class="sup">
-                        <div class="logo"><img src="/removidologo.png" alt=""></div>
+                        <div class="logo"><img src="removidologo.png" alt=""></div>
                         <div class="text"><h1>Comprobante de Existencia para registro con con dispositivo externo</h1><p class="parra">Mascotas y Animales de Compañia</p></div>
-                        <div class="per"><img src="/img.png" alt=""></div>
+                        <div class="per"><img src="img.png" alt=""></div>
                     </div>
                 </nav>
             </header>
             <form class="formulario">
             <section>
                     <div class="patita">
-                        <img src="/patita.png" alt="">
+                        <img src="patita.png" alt="">
                         <h3>DATOS ANIMALES</h3>
                     </div>
                 <div class="contenedor">
@@ -99,26 +99,12 @@
                     </section>
                     <section class="ultimate">
                         <div class="imagenes">
-                            <div> <img src="/perrito-removebg-preview.png" alt=""> <img src="/2perrito-removebg-preview.png" alt=""> </div>  
+                            <div> <img src="perrito-removebg-preview.png" alt=""> <img src="2perrito-removebg-preview.png" alt=""> </div>  
                         </div>
                         <div class="firma"><p>Firma y Timbre</p></div>
                     </section>
                 </div>
-                <button type="button" onclick="guardarDatos()"></button>
-            </form>
-            <script>
-                function guardarDatos() {
-                    var nombre = document.getElementById('nombre').value;
-                    var email = document.getElementById('email').value;
-                    var opcionSeleccionada = document.querySelector('input[name="opcion"]:checked').value;
-                    var contenido = "Nombre: " + nombre + "\n" + "Email: " + email + "\n" + "Opción seleccionada: " + opcionSeleccionada + "\n";
-                    var blob = new Blob([contenido], { type: 'text/plain' });
-                    var enlace = document.createElement('a');
-                    enlace.download = 'datos_formulario.txt';
-                    enlace.href = window.URL.createObjectURL(blob);
-                    enlace.click();
-                  }                                  
-            </script>  
+            </form> 
         </div>
     </div>
     <footer class="logomenor">
